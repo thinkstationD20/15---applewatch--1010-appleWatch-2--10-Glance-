@@ -23,6 +23,7 @@
 		701870981BC91A390082A71F /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701870971BC91A390082A71F /* ExtensionDelegate.m */; };
 		7018709B1BC91A390082A71F /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7018709A1BC91A390082A71F /* NotificationController.m */; };
 		7018709D1BC91A390082A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7018709C1BC91A390082A71F /* Assets.xcassets */; };
+		701870B41BC91DCE0082A71F /* XMGGlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701870B31BC91DCE0082A71F /* XMGGlanceController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		7018709A1BC91A390082A71F /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		7018709C1BC91A390082A71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7018709E1BC91A390082A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701870B21BC91DCE0082A71F /* XMGGlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGGlanceController.h; sourceTree = "<group>"; };
+		701870B31BC91DCE0082A71F /* XMGGlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGGlanceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 			children = (
 				701870931BC91A390082A71F /* InterfaceController.h */,
 				701870941BC91A390082A71F /* InterfaceController.m */,
+				701870B21BC91DCE0082A71F /* XMGGlanceController.h */,
+				701870B31BC91DCE0082A71F /* XMGGlanceController.m */,
 				701870961BC91A390082A71F /* ExtensionDelegate.h */,
 				701870971BC91A390082A71F /* ExtensionDelegate.m */,
 				701870991BC91A390082A71F /* NotificationController.h */,
@@ -465,6 +470,7 @@
 			files = (
 				701870981BC91A390082A71F /* ExtensionDelegate.m in Sources */,
 				701870951BC91A390082A71F /* InterfaceController.m in Sources */,
+				701870B41BC91DCE0082A71F /* XMGGlanceController.m in Sources */,
 				7018709B1BC91A390082A71F /* NotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +755,7 @@
 				701870A31BC91A390082A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701870A51BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +764,7 @@
 				701870A71BC91A390082A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701870A91BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +773,7 @@
 				701870AB1BC91A390082A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701870AC1BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-AlertTests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +782,7 @@
 				701870AE1BC91A390082A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701870AF1BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-AlertUITests" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +791,7 @@
 				701870B11BC91A390082A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

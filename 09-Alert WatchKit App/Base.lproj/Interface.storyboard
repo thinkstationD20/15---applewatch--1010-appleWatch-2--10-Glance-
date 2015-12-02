@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Alert" id="FdG-4A-ohK">
+                            <connections>
+                                <action selector="alertShow" destination="AgC-eL-Hgc" id="W0I-y4-lNJ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="ActionSheet" id="uAv-Md-Rqg">
+                            <connections>
+                                <action selector="actionSheetShow" destination="AgC-eL-Hgc" id="Xdv-67-MNf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SideBySideButtonsAlert" id="iOJ-a6-emU">
+                            <connections>
+                                <action selector="showA3" destination="AgC-eL-Hgc" id="gSk-Mi-L38"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -28,10 +46,35 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
+        <!--xmgGl-->
+        <scene sceneID="qey-zO-YdO">
+            <objects>
+                <glanceController identifier="xmgGl" hidesWhenLoading="NO" topTemplateType="groupLeftSmall" bottomTemplateType="extraLargeLargeBody1Footer" id="Jqx-HI-fGR" customClass="XMGGlanceController">
+                    <items>
+                        <group alignment="left" id="r4K-ep-o3f">
+                            <items>
+                                <imageView width="1" height="1" alignment="left" id="RIx-NL-PwK"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Label" id="wDU-We-Vq9"/>
+                        <label alignment="left" text="Label" id="PBO-H3-7Ty"/>
+                        <label alignment="left" text="Label" id="aub-IN-T0V"/>
+                        <label alignment="left" text="1234" id="bXC-S3-HYy"/>
+                        <label alignment="left" text="1234" id="m6P-Ub-u1s"/>
+                        <label alignment="left" text="Label" id="4jV-N0-Ket"/>
+                        <label alignment="left" text="Footer" id="Car-jQ-cdx"/>
+                    </items>
+                    <connections>
+                        <outlet property="conLab" destination="bXC-S3-HYy" id="L9W-Tg-g5V"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="293" y="861"/>
+        </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
